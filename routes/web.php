@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/muslimbabyname/{name}', function(){
+    return redirect('/');
+})->where('name', '[A-Za-z]+');
+
+Route::resource('muslimbabyname', 'BabyNamesController');
+Route::post('getData', 'BabyNamesController@getData');
