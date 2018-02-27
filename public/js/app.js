@@ -44026,7 +44026,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['openmodal'],
@@ -44633,6 +44632,82 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['openmodal'],
@@ -44674,29 +44749,156 @@ var render = function() {
       ]),
       _vm._v(" "),
       _c("section", { staticClass: "modal-card-body" }, [
-        _c("li", { staticClass: "panel-block" }, [
-          _vm._m(0),
-          _vm._v(_vm._s(_vm.list.n_english) + "\n            ")
-        ]),
+        _vm._m(0),
         _vm._v(" "),
-        _c("li", { staticClass: "panel-block" }, [
+        _c("div", { staticClass: "field is-horizontal" }, [
           _vm._m(1),
-          _vm._v(_vm._s(_vm.list.n_bangla) + "\n            ")
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "field-body", staticStyle: { "margin-top": "5px" } },
+            [
+              _c("div", { staticClass: "field" }, [
+                _c("p", { staticClass: "control is-expanded" }, [
+                  _vm._v(
+                    "\n                            " +
+                      _vm._s(_vm.list.n_bangla) +
+                      "\n                        "
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "field" }, [
+                _c("p", { staticClass: "control is-expanded" }, [
+                  _vm._v(
+                    "\n                            " +
+                      _vm._s(_vm.list.n_bangla) +
+                      "\n                        "
+                  )
+                ])
+              ])
+            ]
+          )
         ]),
         _vm._v(" "),
-        _c("li", { staticClass: "panel-block" }, [
+        _c("div", { staticClass: "field is-horizontal" }, [
           _vm._m(2),
-          _vm._v(_vm._s(_vm.list.n_arabic) + "\n            ")
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "field-body", staticStyle: { "margin-top": "5px" } },
+            [
+              _c("div", { staticClass: "field" }, [
+                _c("p", { staticClass: "control is-expanded" }, [
+                  _vm._v(
+                    "\n                            " +
+                      _vm._s(_vm.list.n_english) +
+                      "\n                        "
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "field" }, [
+                _c("p", { staticClass: "control is-expanded" }, [
+                  _vm._v(
+                    "\n                            " +
+                      _vm._s(_vm.list.n_english) +
+                      "\n                        "
+                  )
+                ])
+              ])
+            ]
+          )
         ]),
         _vm._v(" "),
-        _c("li", { staticClass: "panel-block" }, [
+        _c("div", { staticClass: "field is-horizontal" }, [
           _vm._m(3),
-          _vm._v(_vm._s(_vm.list.n_urdu) + "\n            ")
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "field-body", staticStyle: { "margin-top": "5px" } },
+            [
+              _c("div", { staticClass: "field" }, [
+                _c("p", { staticClass: "control is-expanded" }, [
+                  _vm._v(
+                    "\n                            " +
+                      _vm._s(_vm.list.n_arabic) +
+                      "\n                        "
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "field" }, [
+                _c("p", { staticClass: "control is-expanded" }, [
+                  _vm._v(
+                    "\n                            " +
+                      _vm._s(_vm.list.n_arabic) +
+                      "\n                        "
+                  )
+                ])
+              ])
+            ]
+          )
         ]),
         _vm._v(" "),
-        _c("li", { staticClass: "panel-block" }, [
+        _c("div", { staticClass: "field is-horizontal" }, [
           _vm._m(4),
-          _vm._v(_vm._s(_vm.list.n_hindi) + "\n            ")
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "field-body", staticStyle: { "margin-top": "5px" } },
+            [
+              _c("div", { staticClass: "field" }, [
+                _c("p", { staticClass: "control is-expanded" }, [
+                  _vm._v(
+                    "\n                            " +
+                      _vm._s(_vm.list.n_urdu) +
+                      "\n                        "
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "field" }, [
+                _c("p", { staticClass: "control is-expanded" }, [
+                  _vm._v(
+                    "\n                            " +
+                      _vm._s(_vm.list.n_urdu) +
+                      "\n                        "
+                  )
+                ])
+              ])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _vm._m(5),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "field-body", staticStyle: { "margin-top": "5px" } },
+            [
+              _c("div", { staticClass: "field" }, [
+                _c("p", { staticClass: "control is-expanded" }, [
+                  _vm._v(
+                    "\n                            " +
+                      _vm._s(_vm.list.n_hindi) +
+                      "\n                        "
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "field" }, [
+                _c("p", { staticClass: "control is-expanded" }, [
+                  _vm._v(
+                    "\n                            " +
+                      _vm._s(_vm.list.n_hindi) +
+                      "\n                        "
+                  )
+                ])
+              ])
+            ]
+          )
         ])
       ]),
       _vm._v(" "),
@@ -44717,40 +44919,56 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("label", { staticClass: "column is-2", attrs: { for: "name" } }, [
-      _c("b", [_vm._v(" English Name")])
+    return _c(
+      "h2",
+      { staticStyle: { "text-align": "center", "margin-bottom": "30px" } },
+      [
+        _c("b", [
+          _vm._v(
+            "Left side Original Name and Right side Meaning of this Language"
+          )
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Bangla Name: ")])
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("label", { staticClass: "column is-2", attrs: { for: "name" } }, [
-      _c("b", [_vm._v("Bangla Name")])
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("English Name: ")])
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("label", { staticClass: "column is-2", attrs: { for: "name" } }, [
-      _c("b", [_vm._v("Arabic Name")])
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Arabic Name: ")])
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("label", { staticClass: "column is-2", attrs: { for: "name" } }, [
-      _c("b", [_vm._v("Urdu Name")])
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Urdu Name: ")])
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("label", { staticClass: "column is-2", attrs: { for: "name" } }, [
-      _c("b", [_vm._v("Hindi Name")])
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Hindi Name: ")])
     ])
   }
 ]
@@ -44873,6 +45091,73 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['openmodal'],
@@ -44924,178 +45209,363 @@ var render = function() {
       ]),
       _vm._v(" "),
       _c("section", { staticClass: "modal-card-body" }, [
-        _c("div", { staticClass: "field" }, [
-          _c("label", { staticClass: "label" }, [_vm._v("English Name")]),
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _vm._m(0),
           _vm._v(" "),
-          _c("div", { staticClass: "control" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.list.n_english,
-                  expression: "list.n_english"
-                }
-              ],
-              staticClass: "input",
-              class: { "is-danger": _vm.errors.n_english },
-              attrs: { type: "text", placeholder: "English Name" },
-              domProps: { value: _vm.list.n_english },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
+          _c("div", { staticClass: "field-body" }, [
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.n_bangla,
+                      expression: "list.n_bangla"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.n_bangla },
+                  attrs: { type: "text", placeholder: "Bangla Name" },
+                  domProps: { value: _vm.list.n_bangla },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "n_bangla", $event.target.value)
+                    }
                   }
-                  _vm.$set(_vm.list, "n_english", $event.target.value)
-                }
-              }
-            }),
+                }),
+                _vm._v(" "),
+                _vm.errors.n_bangla
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.n_bangla[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ]),
             _vm._v(" "),
-            _vm.errors.n_english
-              ? _c("small", { staticClass: "has-text-danger" }, [
-                  _vm._v(_vm._s(_vm.errors.n_english[0]))
-                ])
-              : _vm._e()
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.n_bangla,
+                      expression: "list.n_bangla"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.n_bangla },
+                  attrs: { type: "text", placeholder: "Bangla Name" },
+                  domProps: { value: _vm.list.n_bangla },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "n_bangla", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors.n_bangla
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.n_bangla[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ])
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "field" }, [
-          _c("label", { staticClass: "label" }, [_vm._v("Bangla Name")]),
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _vm._m(1),
           _vm._v(" "),
-          _c("div", { staticClass: "control" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.list.n_bangla,
-                  expression: "list.n_bangla"
-                }
-              ],
-              staticClass: "input",
-              class: { "is-danger": _vm.errors.n_bangla },
-              attrs: { type: "text", placeholder: "Bangla Name" },
-              domProps: { value: _vm.list.n_bangla },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
+          _c("div", { staticClass: "field-body" }, [
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.n_english,
+                      expression: "list.n_english"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.n_english },
+                  attrs: { type: "text", placeholder: "English Name" },
+                  domProps: { value: _vm.list.n_english },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "n_english", $event.target.value)
+                    }
                   }
-                  _vm.$set(_vm.list, "n_bangla", $event.target.value)
-                }
-              }
-            }),
+                }),
+                _vm._v(" "),
+                _vm.errors.n_english
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.n_english[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ]),
             _vm._v(" "),
-            _vm.errors.n_bangla
-              ? _c("small", { staticClass: "has-text-danger" }, [
-                  _vm._v(_vm._s(_vm.errors.n_bangla[0]))
-                ])
-              : _vm._e()
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.n_english,
+                      expression: "list.n_english"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.n_english },
+                  attrs: { type: "text", placeholder: "English Name" },
+                  domProps: { value: _vm.list.n_english },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "n_english", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors.n_english
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.n_english[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ])
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "field" }, [
-          _c("label", { staticClass: "label" }, [_vm._v("Arabic Name")]),
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _vm._m(2),
           _vm._v(" "),
-          _c("div", { staticClass: "control" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.list.n_arabic,
-                  expression: "list.n_arabic"
-                }
-              ],
-              staticClass: "input",
-              class: { "is-danger": _vm.errors.n_arabic },
-              attrs: { type: "text", placeholder: "Arabic Name" },
-              domProps: { value: _vm.list.n_arabic },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
+          _c("div", { staticClass: "field-body" }, [
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.n_arabic,
+                      expression: "list.n_arabic"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.n_arabic },
+                  attrs: { type: "text", placeholder: "Arabic Name" },
+                  domProps: { value: _vm.list.n_arabic },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "n_arabic", $event.target.value)
+                    }
                   }
-                  _vm.$set(_vm.list, "n_arabic", $event.target.value)
-                }
-              }
-            }),
+                }),
+                _vm._v(" "),
+                _vm.errors.n_arabic
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.n_arabic[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ]),
             _vm._v(" "),
-            _vm.errors.n_arabic
-              ? _c("small", { staticClass: "has-text-danger" }, [
-                  _vm._v(_vm._s(_vm.errors.n_arabic[0]))
-                ])
-              : _vm._e()
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.n_arabic,
+                      expression: "list.n_arabic"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.n_arabic },
+                  attrs: { type: "text", placeholder: "Arabic Name" },
+                  domProps: { value: _vm.list.n_arabic },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "n_arabic", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors.n_arabic
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.n_arabic[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ])
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "field" }, [
-          _c("label", { staticClass: "label" }, [_vm._v("Urdu Name")]),
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _vm._m(3),
           _vm._v(" "),
-          _c("div", { staticClass: "control" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.list.n_urdu,
-                  expression: "list.n_urdu"
-                }
-              ],
-              staticClass: "input",
-              class: { "is-danger": _vm.errors.n_urdu },
-              attrs: { type: "text", placeholder: "Urdu Name" },
-              domProps: { value: _vm.list.n_urdu },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
+          _c("div", { staticClass: "field-body" }, [
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.n_urdu,
+                      expression: "list.n_urdu"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.n_urdu },
+                  attrs: { type: "text", placeholder: "Urdu Name" },
+                  domProps: { value: _vm.list.n_urdu },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "n_urdu", $event.target.value)
+                    }
                   }
-                  _vm.$set(_vm.list, "n_urdu", $event.target.value)
-                }
-              }
-            }),
+                }),
+                _vm._v(" "),
+                _vm.errors.n_urdu
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.n_urdu[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ]),
             _vm._v(" "),
-            _vm.errors.n_urdu
-              ? _c("small", { staticClass: "has-text-danger" }, [
-                  _vm._v(_vm._s(_vm.errors.n_urdu[0]))
-                ])
-              : _vm._e()
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.n_urdu,
+                      expression: "list.n_urdu"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.n_urdu },
+                  attrs: { type: "text", placeholder: "Urdu Name" },
+                  domProps: { value: _vm.list.n_urdu },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "n_urdu", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors.n_urdu
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.n_urdu[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ])
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "field" }, [
-          _c("label", { staticClass: "label" }, [_vm._v("Hindi Name")]),
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _vm._m(4),
           _vm._v(" "),
-          _c("div", { staticClass: "control" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.list.n_hindi,
-                  expression: "list.n_hindi"
-                }
-              ],
-              staticClass: "input",
-              class: { "is-danger": _vm.errors.n_hindi },
-              attrs: { type: "text", placeholder: "Hindi Name" },
-              domProps: { value: _vm.list.n_hindi },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
+          _c("div", { staticClass: "field-body" }, [
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.n_hindi,
+                      expression: "list.n_hindi"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.n_hindi },
+                  attrs: { type: "text", placeholder: "Hindi Name" },
+                  domProps: { value: _vm.list.n_hindi },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "n_hindi", $event.target.value)
+                    }
                   }
-                  _vm.$set(_vm.list, "n_hindi", $event.target.value)
-                }
-              }
-            }),
+                }),
+                _vm._v(" "),
+                _vm.errors.n_hindi
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.n_hindi[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ]),
             _vm._v(" "),
-            _vm.errors.n_hindi
-              ? _c("small", { staticClass: "has-text-danger" }, [
-                  _vm._v(_vm._s(_vm.errors.n_hindi[0]))
-                ])
-              : _vm._e()
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.n_hindi,
+                      expression: "list.n_hindi"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.n_hindi },
+                  attrs: { type: "text", placeholder: "Hindi Name" },
+                  domProps: { value: _vm.list.n_hindi },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "n_hindi", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors.n_hindi
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.n_hindi[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ])
           ])
         ])
       ]),
@@ -45114,7 +45584,48 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Bangla ")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("English")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Arabic")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Urdu")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Hindi")])
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {

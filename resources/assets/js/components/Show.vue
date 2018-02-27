@@ -8,22 +8,98 @@
             </header>
 
             <section class="modal-card-body">
+              <h2 style="text-align:center; margin-bottom:30px;"><b>Left side Original Name and Right side Meaning of this Language</b></h2>
 
-                <li class="panel-block">
-                    <label for="name" class="column is-2"> <b> English Name</b></label>{{ list.n_english }}
-                </li>
-                <li class="panel-block">
-                    <label for="name" class="column is-2"><b>Bangla Name</b></label>{{ list.n_bangla }}
-                </li>
-                <li class="panel-block">
-                    <label for="name" class="column is-2"><b>Arabic Name</b></label>{{ list.n_arabic }}
-                </li>
-                <li class="panel-block">
-                    <label for="name" class="column is-2"><b>Urdu Name</b></label>{{ list.n_urdu }}
-                </li>
-                <li class="panel-block">
-                    <label for="name" class="column is-2"><b>Hindi Name</b></label>{{ list.n_hindi }}
-                </li>
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label">Bangla Name: </label>
+                    </div>
+                    <div class="field-body" style="margin-top:5px;">
+                        <div class="field">
+                            <p class="control is-expanded">
+                                {{ list.n_bangla }}
+                            </p>
+                        </div>
+                        <div class="field">
+                            <p class="control is-expanded">
+                                {{ list.n_bangla }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label">English Name: </label>
+                    </div>
+                    <div class="field-body" style="margin-top:5px;">
+                        <div class="field">
+                            <p class="control is-expanded">
+                                {{ list.n_english }}
+                            </p>
+                        </div>
+                        <div class="field">
+                            <p class="control is-expanded">
+                                {{ list.n_english }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label">Arabic Name: </label>
+                    </div>
+                    <div class="field-body" style="margin-top:5px;">
+                        <div class="field">
+                            <p class="control is-expanded">
+                                {{ list.n_arabic }}
+                            </p>
+                        </div>
+                        <div class="field">
+                            <p class="control is-expanded">
+                                {{ list.n_arabic }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label">Urdu Name: </label>
+                    </div>
+                    <div class="field-body" style="margin-top:5px;">
+                        <div class="field">
+                            <p class="control is-expanded">
+                                {{ list.n_urdu }}
+                            </p>
+                        </div>
+                        <div class="field">
+                            <p class="control is-expanded">
+                                {{ list.n_urdu }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label">Hindi Name: </label>
+                    </div>
+                    <div class="field-body" style="margin-top:5px;">
+                        <div class="field">
+                            <p class="control is-expanded">
+                                {{ list.n_hindi }}
+                            </p>
+                        </div>
+                        <div class="field">
+                            <p class="control is-expanded">
+                                {{ list.n_hindi }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
 
             </section>
