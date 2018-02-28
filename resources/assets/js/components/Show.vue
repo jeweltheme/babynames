@@ -12,7 +12,7 @@
 
                 <div class="field is-horizontal">
                     <div class="field-label is-normal">
-                        <label class="label">Bangla Name: </label>
+                        <label class="label">Bangla: </label>
                     </div>
                     <div class="field-body" style="margin-top:5px;">
                         <div class="field">
@@ -22,7 +22,7 @@
                         </div>
                         <div class="field">
                             <p class="control is-expanded">
-                                {{ list.n_bangla }}
+                                {{ list.m_bangla }}
                             </p>
                         </div>
                     </div>
@@ -30,7 +30,7 @@
 
                 <div class="field is-horizontal">
                     <div class="field-label is-normal">
-                        <label class="label">English Name: </label>
+                        <label class="label">English: </label>
                     </div>
                     <div class="field-body" style="margin-top:5px;">
                         <div class="field">
@@ -40,7 +40,7 @@
                         </div>
                         <div class="field">
                             <p class="control is-expanded">
-                                {{ list.n_english }}
+                                {{ list.m_english }}
                             </p>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
 
                 <div class="field is-horizontal">
                     <div class="field-label is-normal">
-                        <label class="label">Arabic Name: </label>
+                        <label class="label">Arabic: </label>
                     </div>
                     <div class="field-body" style="margin-top:5px;">
                         <div class="field">
@@ -59,7 +59,7 @@
                         </div>
                         <div class="field">
                             <p class="control is-expanded">
-                                {{ list.n_arabic }}
+                                {{ list.m_arabic }}
                             </p>
                         </div>
                     </div>
@@ -67,7 +67,7 @@
 
                 <div class="field is-horizontal">
                     <div class="field-label is-normal">
-                        <label class="label">Urdu Name: </label>
+                        <label class="label">Urdu: </label>
                     </div>
                     <div class="field-body" style="margin-top:5px;">
                         <div class="field">
@@ -77,7 +77,7 @@
                         </div>
                         <div class="field">
                             <p class="control is-expanded">
-                                {{ list.n_urdu }}
+                                {{ list.m_urdu }}
                             </p>
                         </div>
                     </div>
@@ -85,7 +85,7 @@
 
                 <div class="field is-horizontal">
                     <div class="field-label is-normal">
-                        <label class="label">Hindi Name: </label>
+                        <label class="label">Hindi: </label>
                     </div>
                     <div class="field-body" style="margin-top:5px;">
                         <div class="field">
@@ -95,16 +95,48 @@
                         </div>
                         <div class="field">
                             <p class="control is-expanded">
-                                {{ list.n_hindi }}
+                                {{ list.m_hindi }}
                             </p>
                         </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label">Name Type: </label>
+                    </div>
+                    <div class="field-body" style="margin-top:5px;">
+                        <div class="field" v-if="list.name_type === 1">
+                            <p class="control is-expanded">
+                                Boy
+                            </p>
+                        </div>
+                        <div class="field" v-else-if="list.name_type === 2">
+                            <p class="control is-expanded">
+                                Girl
+                            </p>
+                        </div>
+                        <div class="field" v-else-if="list.name_type === 3">
+                            <p class="control is-expanded">
+                                Allah
+                            </p>
+                        </div>
+                        <div class="field" v-else-if="list.name_type === 4">
+                            <p class="control is-expanded">
+                                Sahabi
+                            </p>
+                        </div>
+                        <div class="field" v-else>
+                            <p class="control is-expanded">
+                            </p>
+                        </div>
+
                     </div>
                 </div>
 
 
             </section>
             <footer class="modal-card-foot">
-                <button class="button is-success">Save changes</button>
                 <button class="button" @click="close">Cancel</button>
             </footer>
         </div>

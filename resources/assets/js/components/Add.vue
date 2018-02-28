@@ -26,8 +26,8 @@
                         </div>
                         <div class="field">
                             <p class="control is-expanded">
-                                <input class="input" :class="{'is-danger': errors.n_bangla}" type="text" placeholder="Bangla Name Meaning" v-model="list.n_bangla">
-                              <small v-if="errors.n_bangla" class="has-text-danger">{{ errors.n_bangla[0] }}</small>
+                                <input class="input" :class="{'is-danger': errors.m_bangla}" type="text" placeholder="Bangla Name Meaning" v-model="list.m_bangla">
+                              <small v-if="errors.m_bangla" class="has-text-danger">{{ errors.m_bangla[0] }}</small>
                             </p>
                         </div>
                     </div>
@@ -46,8 +46,8 @@
                         </div>
                         <div class="field">
                             <p class="control is-expanded">
-                                <input class="input" :class="{'is-danger': errors.n_english}" type="text" placeholder="English Name Meaning" v-model="list.n_english">
-                                <small v-if="errors.n_english" class="has-text-danger">{{ errors.n_english[0] }}</small>
+                                <input class="input" :class="{'is-danger': errors.m_english}" type="text" placeholder="English Name Meaning" v-model="list.m_english">
+                                <small v-if="errors.m_english" class="has-text-danger">{{ errors.m_english[0] }}</small>
                             </p>
                         </div>
                     </div>
@@ -66,8 +66,8 @@
                         </div>
                         <div class="field">
                             <p class="control is-expanded">
-                                <input class="input" :class="{'is-danger': errors.n_arabic}" type="text" placeholder="Arabic Name Meaning" v-model="list.n_arabic">
-                                <small v-if="errors.n_arabic" class="has-text-danger">{{ errors.n_arabic[0] }}</small>
+                                <input class="input" :class="{'is-danger': errors.m_arabic}" type="text" placeholder="Arabic Name Meaning" v-model="list.m_arabic">
+                                <small v-if="errors.m_arabic" class="has-text-danger">{{ errors.m_arabic[0] }}</small>
                             </p>
                         </div>
                     </div>
@@ -86,8 +86,8 @@
                         </div>
                         <div class="field">
                             <p class="control is-expanded">
-                                <input class="input" :class="{'is-danger': errors.n_urdu}" type="text" placeholder="Urdu Name Meaning" v-model="list.n_urdu">
-                                <small v-if="errors.n_urdu" class="has-text-danger">{{ errors.n_urdu[0] }}</small>
+                                <input class="input" :class="{'is-danger': errors.m_urdu}" type="text" placeholder="Urdu Name Meaning" v-model="list.m_urdu">
+                                <small v-if="errors.m_urdu" class="has-text-danger">{{ errors.m_urdu[0] }}</small>
                             </p>
                         </div>
                     </div>
@@ -106,12 +106,29 @@
                         </div>
                         <div class="field">
                             <p class="control is-expanded">
-                                <input class="input" :class="{'is-danger': errors.n_hindi}" type="text" placeholder="Hindi Name" v-model="list.n_hindi">
-                                <small v-if="errors.n_hindi" class="has-text-danger">{{ errors.n_hindi[0] }}</small>
+                                <input class="input" :class="{'is-danger': errors.m_hindi}" type="text" placeholder="Hindi Name" v-model="list.m_hindi">
+                                <small v-if="errors.m_hindi" class="has-text-danger">{{ errors.m_hindi[0] }}</small>
                             </p>
                         </div>
                     </div>
                 </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label">Name Type</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="select">
+                            <select v-model="list.name_type">
+                                <option value="1">Boy</option>
+                                <option value="2">Girl</option>
+                                <option value="3">Allah</option>
+                                <option value="4">Sahabi</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
 
             </section>
             <footer class="modal-card-foot">
@@ -133,12 +150,13 @@
                     n_arabic:'',
                     n_urdu:'',
                     n_hindi:'',
+                    name_type:'',
 
-                    // m_english:'',
-                    // m_bangla:'',
-                    // m_arabic:'',
-                    // m_hindi:'',
-                    // m_urdu:''
+                    m_english:'',
+                    m_bangla:'',
+                    m_arabic:'',
+                    m_hindi:'',
+                    m_urdu:''
                 },
                 errors:{}
             }

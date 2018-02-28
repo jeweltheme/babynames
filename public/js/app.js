@@ -11891,9 +11891,9 @@ module.exports = Vue$3;
 var disposed = false
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(48)
+var __vue_script__ = __webpack_require__(53)
 /* template */
-var __vue_template__ = __webpack_require__(58)
+var __vue_template__ = __webpack_require__(63)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -11940,7 +11940,7 @@ var normalizeComponent = __webpack_require__(1)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(59)
+var __vue_template__ = __webpack_require__(64)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -11983,7 +11983,7 @@ module.exports = Component.exports
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(14);
-module.exports = __webpack_require__(60);
+module.exports = __webpack_require__(65);
 
 
 /***/ }),
@@ -43598,13 +43598,13 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(71)
+  __webpack_require__(47)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(47)
+var __vue_template__ = __webpack_require__(52)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -43646,2212 +43646,44 @@ module.exports = Component.exports
 /* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("footer", { staticClass: "footer" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "content has-text-centered" }, [
-          _c("p", [
-            _c("strong", [_vm._v("Muslim Baby Name App")]),
-            _vm._v(" by "),
-            _c("a", { attrs: { href: "https://jeweltheme.com" } }, [
-              _vm._v("Liton Arefin")
-            ]),
-            _vm._v(". This source code is licensed by "),
-            _c(
-              "a",
-              { attrs: { href: "https://github.com/jeweltheme/babynames" } },
-              [_vm._v("Github Jewel Theme")]
-            )
-          ])
-        ])
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-083ff5dc", module.exports)
-  }
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(48);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(50)("4750ce28", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-083ff5dc\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Footer.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-083ff5dc\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Footer.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
 }
 
 /***/ }),
 /* 48 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Add_vue__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Add_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Add_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Show_vue__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Show_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__Show_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Update_vue__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Update_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__Update_vue__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+exports = module.exports = __webpack_require__(49)(false);
+// imports
 
 
+// module
+exports.push([module.i, "\n.footer {\n   position:fixed;\n   left:0px;\n   bottom:0px;\n   height:30px;\n   width:100%;\n}\n", ""]);
 
+// exports
 
-/* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            addActive: '',
-            showActive: '',
-            updateActive: '',
-            lists: {},
-            errors: {},
-            loading: false,
-            searchQuery: '',
-            temp: ''
-        };
-    },
-
-    components: {
-        AppAdd: __WEBPACK_IMPORTED_MODULE_0__Add_vue___default.a,
-        AppShow: __WEBPACK_IMPORTED_MODULE_1__Show_vue___default.a,
-        AppUpdate: __WEBPACK_IMPORTED_MODULE_2__Update_vue___default.a
-    },
-    methods: {
-        addNew: function addNew() {
-            this.addActive = "is-active";
-        },
-        close: function close() {
-            this.addActive = this.showActive = this.updateActive = '';
-        },
-        openShow: function openShow(key) {
-            this.$children[1].list = this.temp[key];
-            this.showActive = 'is-active';
-        },
-        openUpdate: function openUpdate(key) {
-            this.$children[2].list = this.temp[key];
-            this.updateActive = 'is-active';
-        },
-        del: function del(key, id) {
-            var _this = this;
-
-            if (confirm("Are you sure wants to do this ?")) {
-                this.loading = !this.loading;
-                axios.delete('/muslimbabyname/' + id).then(function (response) {
-                    _this.lists.splice(key, 1);
-                    _this.loading = !_this.loading;
-                }).catch(function (error) {
-                    return _this.errors = error.response.data.errors;
-                });
-            }
-
-            // console.log(`${key} ${id}`)
-            //    axios.delete(`/muslimbabyname/${id}`)
-            //    .then( (response) => console.log("Deleted"))
-            //   .catch( (error) => this.errors = error.response.data.errors )
-        }
-    },
-    mounted: function mounted() {
-        var _this2 = this;
-
-        axios.post('/getData').then(function (response) {
-            return _this2.lists = _this2.temp = response.data;
-        }).catch(function (error) {
-            return _this2.errors = error.response.data.errors;
-        });
-    },
-
-    watch: {
-        searchQuery: function searchQuery() {
-            var _this3 = this;
-
-            if (this.searchQuery.length > 0) {
-                this.temp = this.lists.filter(function (item) {
-                    return Object.keys(item).some(function (key) {
-                        var string = String(item[key]);
-                        return string.toLowerCase().indexOf(_this3.searchQuery.toLowerCase()) > -1;
-                        // console.log(string)
-                    });
-                });
-                //console.log(result)
-            } else {
-                this.temp = this.lists;
-            }
-        }
-    }
-});
 
 /***/ }),
 /* 49 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(1)
-/* script */
-var __vue_script__ = __webpack_require__(50)
-/* template */
-var __vue_template__ = __webpack_require__(51)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/Add.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-ab89768c", Component.options)
-  } else {
-    hotAPI.reload("data-v-ab89768c", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 50 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['openmodal'],
-    data: function data() {
-        return {
-            list: {
-                n_english: '',
-                n_bangla: '',
-                n_arabic: '',
-                n_urdu: '',
-                n_hindi: ''
-
-                // m_english:'',
-                // m_bangla:'',
-                // m_arabic:'',
-                // m_hindi:'',
-                // m_urdu:''
-            },
-            errors: {}
-        };
-    },
-
-    methods: {
-        close: function close() {
-            this.$emit('closeRequest');
-        },
-        save: function save() {
-            var _this = this;
-
-            axios.post('/muslimbabyname', this.$data.list).then(function (response) {
-                _this.close();
-                _this.$parent.lists.push(response.data);
-                _this.$parent.lists.sort(function (a, b) {
-                    if (a.n_english > b.n_english) {
-                        return 1;
-                    } else if (a.n_english < b.n_english) {
-                        return -1;
-                    }
-                });
-                _this.list = "";
-            }).catch(function (error) {
-                return _this.errors = error.response.data.errors;
-            });
-        }
-    }
-});
-
-/***/ }),
-/* 51 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "modal", class: _vm.openmodal }, [
-    _c("div", { staticClass: "modal-background" }),
-    _vm._v(" "),
-    _c("div", { staticClass: "modal-card" }, [
-      _c("header", { staticClass: "modal-card-head" }, [
-        _c("p", { staticClass: "modal-card-title" }, [
-          _vm._v("Muslim Baby Name Entry")
-        ]),
-        _vm._v(" "),
-        _c("button", {
-          staticClass: "delete",
-          attrs: { "aria-label": "close" },
-          on: { click: _vm.close }
-        })
-      ]),
-      _vm._v(" "),
-      _c("section", { staticClass: "modal-card-body" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _c("div", { staticClass: "field is-horizontal" }, [
-          _vm._m(1),
-          _vm._v(" "),
-          _c("div", { staticClass: "field-body" }, [
-            _c("div", { staticClass: "field" }, [
-              _c("p", { staticClass: "control is-expanded" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.list.n_bangla,
-                      expression: "list.n_bangla"
-                    }
-                  ],
-                  staticClass: "input",
-                  class: { "is-danger": _vm.errors.n_bangla },
-                  attrs: { type: "text", placeholder: "Bangla Name" },
-                  domProps: { value: _vm.list.n_bangla },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(_vm.list, "n_bangla", $event.target.value)
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _vm.errors.n_bangla
-                  ? _c("small", { staticClass: "has-text-danger" }, [
-                      _vm._v(_vm._s(_vm.errors.n_bangla[0]))
-                    ])
-                  : _vm._e()
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "field" }, [
-              _c("p", { staticClass: "control is-expanded" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.list.n_bangla,
-                      expression: "list.n_bangla"
-                    }
-                  ],
-                  staticClass: "input",
-                  class: { "is-danger": _vm.errors.n_bangla },
-                  attrs: { type: "text", placeholder: "Bangla Name Meaning" },
-                  domProps: { value: _vm.list.n_bangla },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(_vm.list, "n_bangla", $event.target.value)
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _vm.errors.n_bangla
-                  ? _c("small", { staticClass: "has-text-danger" }, [
-                      _vm._v(_vm._s(_vm.errors.n_bangla[0]))
-                    ])
-                  : _vm._e()
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "field is-horizontal" }, [
-          _vm._m(2),
-          _vm._v(" "),
-          _c("div", { staticClass: "field-body" }, [
-            _c("div", { staticClass: "field" }, [
-              _c("p", { staticClass: "control is-expanded" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.list.n_english,
-                      expression: "list.n_english"
-                    }
-                  ],
-                  staticClass: "input",
-                  class: { "is-danger": _vm.errors.n_english },
-                  attrs: { type: "text", placeholder: "English Name" },
-                  domProps: { value: _vm.list.n_english },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(_vm.list, "n_english", $event.target.value)
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _vm.errors.n_english
-                  ? _c("small", { staticClass: "has-text-danger" }, [
-                      _vm._v(_vm._s(_vm.errors.n_english[0]))
-                    ])
-                  : _vm._e()
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "field" }, [
-              _c("p", { staticClass: "control is-expanded" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.list.n_english,
-                      expression: "list.n_english"
-                    }
-                  ],
-                  staticClass: "input",
-                  class: { "is-danger": _vm.errors.n_english },
-                  attrs: { type: "text", placeholder: "English Name Meaning" },
-                  domProps: { value: _vm.list.n_english },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(_vm.list, "n_english", $event.target.value)
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _vm.errors.n_english
-                  ? _c("small", { staticClass: "has-text-danger" }, [
-                      _vm._v(_vm._s(_vm.errors.n_english[0]))
-                    ])
-                  : _vm._e()
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "field is-horizontal" }, [
-          _vm._m(3),
-          _vm._v(" "),
-          _c("div", { staticClass: "field-body" }, [
-            _c("div", { staticClass: "field" }, [
-              _c("p", { staticClass: "control is-expanded" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.list.n_arabic,
-                      expression: "list.n_arabic"
-                    }
-                  ],
-                  staticClass: "input",
-                  class: { "is-danger": _vm.errors.n_arabic },
-                  attrs: { type: "text", placeholder: "Arabic Name" },
-                  domProps: { value: _vm.list.n_arabic },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(_vm.list, "n_arabic", $event.target.value)
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _vm.errors.n_arabic
-                  ? _c("small", { staticClass: "has-text-danger" }, [
-                      _vm._v(_vm._s(_vm.errors.n_arabic[0]))
-                    ])
-                  : _vm._e()
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "field" }, [
-              _c("p", { staticClass: "control is-expanded" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.list.n_arabic,
-                      expression: "list.n_arabic"
-                    }
-                  ],
-                  staticClass: "input",
-                  class: { "is-danger": _vm.errors.n_arabic },
-                  attrs: { type: "text", placeholder: "Arabic Name Meaning" },
-                  domProps: { value: _vm.list.n_arabic },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(_vm.list, "n_arabic", $event.target.value)
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _vm.errors.n_arabic
-                  ? _c("small", { staticClass: "has-text-danger" }, [
-                      _vm._v(_vm._s(_vm.errors.n_arabic[0]))
-                    ])
-                  : _vm._e()
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "field is-horizontal" }, [
-          _vm._m(4),
-          _vm._v(" "),
-          _c("div", { staticClass: "field-body" }, [
-            _c("div", { staticClass: "field" }, [
-              _c("p", { staticClass: "control is-expanded" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.list.n_urdu,
-                      expression: "list.n_urdu"
-                    }
-                  ],
-                  staticClass: "input",
-                  class: { "is-danger": _vm.errors.n_urdu },
-                  attrs: { type: "text", placeholder: "Urdu Name" },
-                  domProps: { value: _vm.list.n_urdu },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(_vm.list, "n_urdu", $event.target.value)
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _vm.errors.n_urdu
-                  ? _c("small", { staticClass: "has-text-danger" }, [
-                      _vm._v(_vm._s(_vm.errors.n_urdu[0]))
-                    ])
-                  : _vm._e()
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "field" }, [
-              _c("p", { staticClass: "control is-expanded" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.list.n_urdu,
-                      expression: "list.n_urdu"
-                    }
-                  ],
-                  staticClass: "input",
-                  class: { "is-danger": _vm.errors.n_urdu },
-                  attrs: { type: "text", placeholder: "Urdu Name Meaning" },
-                  domProps: { value: _vm.list.n_urdu },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(_vm.list, "n_urdu", $event.target.value)
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _vm.errors.n_urdu
-                  ? _c("small", { staticClass: "has-text-danger" }, [
-                      _vm._v(_vm._s(_vm.errors.n_urdu[0]))
-                    ])
-                  : _vm._e()
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "field is-horizontal" }, [
-          _vm._m(5),
-          _vm._v(" "),
-          _c("div", { staticClass: "field-body" }, [
-            _c("div", { staticClass: "field" }, [
-              _c("p", { staticClass: "control is-expanded" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.list.n_hindi,
-                      expression: "list.n_hindi"
-                    }
-                  ],
-                  staticClass: "input",
-                  class: { "is-danger": _vm.errors.n_hindi },
-                  attrs: { type: "text", placeholder: "Hindi Name" },
-                  domProps: { value: _vm.list.n_hindi },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(_vm.list, "n_hindi", $event.target.value)
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _vm.errors.n_hindi
-                  ? _c("small", { staticClass: "has-text-danger" }, [
-                      _vm._v(_vm._s(_vm.errors.n_hindi[0]))
-                    ])
-                  : _vm._e()
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "field" }, [
-              _c("p", { staticClass: "control is-expanded" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.list.n_hindi,
-                      expression: "list.n_hindi"
-                    }
-                  ],
-                  staticClass: "input",
-                  class: { "is-danger": _vm.errors.n_hindi },
-                  attrs: { type: "text", placeholder: "Hindi Name" },
-                  domProps: { value: _vm.list.n_hindi },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(_vm.list, "n_hindi", $event.target.value)
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _vm.errors.n_hindi
-                  ? _c("small", { staticClass: "has-text-danger" }, [
-                      _vm._v(_vm._s(_vm.errors.n_hindi[0]))
-                    ])
-                  : _vm._e()
-              ])
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("footer", { staticClass: "modal-card-foot" }, [
-        _c(
-          "button",
-          { staticClass: "button is-success", on: { click: _vm.save } },
-          [_vm._v("Add Name")]
-        ),
-        _vm._v(" "),
-        _c("button", { staticClass: "button", on: { click: _vm.close } }, [
-          _vm._v("Cancel")
-        ])
-      ])
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "h2",
-      { staticStyle: { "text-align": "center", "margin-bottom": "30px" } },
-      [
-        _c("b", [
-          _vm._v(
-            "Left Input Original Name and Right Input Meaning of this Language"
-          )
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "field-label is-normal" }, [
-      _c("label", { staticClass: "label" }, [_vm._v("Bangla ")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "field-label is-normal" }, [
-      _c("label", { staticClass: "label" }, [_vm._v("English")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "field-label is-normal" }, [
-      _c("label", { staticClass: "label" }, [_vm._v("Arabic")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "field-label is-normal" }, [
-      _c("label", { staticClass: "label" }, [_vm._v("Urdu")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "field-label is-normal" }, [
-      _c("label", { staticClass: "label" }, [_vm._v("Hindi")])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-ab89768c", module.exports)
-  }
-}
-
-/***/ }),
-/* 52 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(1)
-/* script */
-var __vue_script__ = __webpack_require__(53)
-/* template */
-var __vue_template__ = __webpack_require__(54)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/Show.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-55769598", Component.options)
-  } else {
-    hotAPI.reload("data-v-55769598", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 53 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['openmodal'],
-    data: function data() {
-        return {
-            list: ''
-        };
-    },
-
-    methods: {
-        close: function close() {
-            this.$emit('closeRequest');
-        }
-    }
-});
-
-/***/ }),
-/* 54 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "modal", class: _vm.openmodal }, [
-    _c("div", { staticClass: "modal-background" }),
-    _vm._v(" "),
-    _c("div", { staticClass: "modal-card" }, [
-      _c("header", { staticClass: "modal-card-head" }, [
-        _c("p", { staticClass: "modal-card-title" }, [
-          _vm._v(_vm._s(_vm.list.n_english) + "'s Details View")
-        ]),
-        _vm._v(" "),
-        _c("button", {
-          staticClass: "delete",
-          attrs: { "aria-label": "close" },
-          on: { click: _vm.close }
-        })
-      ]),
-      _vm._v(" "),
-      _c("section", { staticClass: "modal-card-body" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _c("div", { staticClass: "field is-horizontal" }, [
-          _vm._m(1),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "field-body", staticStyle: { "margin-top": "5px" } },
-            [
-              _c("div", { staticClass: "field" }, [
-                _c("p", { staticClass: "control is-expanded" }, [
-                  _vm._v(
-                    "\n                            " +
-                      _vm._s(_vm.list.n_bangla) +
-                      "\n                        "
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "field" }, [
-                _c("p", { staticClass: "control is-expanded" }, [
-                  _vm._v(
-                    "\n                            " +
-                      _vm._s(_vm.list.n_bangla) +
-                      "\n                        "
-                  )
-                ])
-              ])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "field is-horizontal" }, [
-          _vm._m(2),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "field-body", staticStyle: { "margin-top": "5px" } },
-            [
-              _c("div", { staticClass: "field" }, [
-                _c("p", { staticClass: "control is-expanded" }, [
-                  _vm._v(
-                    "\n                            " +
-                      _vm._s(_vm.list.n_english) +
-                      "\n                        "
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "field" }, [
-                _c("p", { staticClass: "control is-expanded" }, [
-                  _vm._v(
-                    "\n                            " +
-                      _vm._s(_vm.list.n_english) +
-                      "\n                        "
-                  )
-                ])
-              ])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "field is-horizontal" }, [
-          _vm._m(3),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "field-body", staticStyle: { "margin-top": "5px" } },
-            [
-              _c("div", { staticClass: "field" }, [
-                _c("p", { staticClass: "control is-expanded" }, [
-                  _vm._v(
-                    "\n                            " +
-                      _vm._s(_vm.list.n_arabic) +
-                      "\n                        "
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "field" }, [
-                _c("p", { staticClass: "control is-expanded" }, [
-                  _vm._v(
-                    "\n                            " +
-                      _vm._s(_vm.list.n_arabic) +
-                      "\n                        "
-                  )
-                ])
-              ])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "field is-horizontal" }, [
-          _vm._m(4),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "field-body", staticStyle: { "margin-top": "5px" } },
-            [
-              _c("div", { staticClass: "field" }, [
-                _c("p", { staticClass: "control is-expanded" }, [
-                  _vm._v(
-                    "\n                            " +
-                      _vm._s(_vm.list.n_urdu) +
-                      "\n                        "
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "field" }, [
-                _c("p", { staticClass: "control is-expanded" }, [
-                  _vm._v(
-                    "\n                            " +
-                      _vm._s(_vm.list.n_urdu) +
-                      "\n                        "
-                  )
-                ])
-              ])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "field is-horizontal" }, [
-          _vm._m(5),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "field-body", staticStyle: { "margin-top": "5px" } },
-            [
-              _c("div", { staticClass: "field" }, [
-                _c("p", { staticClass: "control is-expanded" }, [
-                  _vm._v(
-                    "\n                            " +
-                      _vm._s(_vm.list.n_hindi) +
-                      "\n                        "
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "field" }, [
-                _c("p", { staticClass: "control is-expanded" }, [
-                  _vm._v(
-                    "\n                            " +
-                      _vm._s(_vm.list.n_hindi) +
-                      "\n                        "
-                  )
-                ])
-              ])
-            ]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("footer", { staticClass: "modal-card-foot" }, [
-        _c("button", { staticClass: "button is-success" }, [
-          _vm._v("Save changes")
-        ]),
-        _vm._v(" "),
-        _c("button", { staticClass: "button", on: { click: _vm.close } }, [
-          _vm._v("Cancel")
-        ])
-      ])
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "h2",
-      { staticStyle: { "text-align": "center", "margin-bottom": "30px" } },
-      [
-        _c("b", [
-          _vm._v(
-            "Left side Original Name and Right side Meaning of this Language"
-          )
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "field-label is-normal" }, [
-      _c("label", { staticClass: "label" }, [_vm._v("Bangla Name: ")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "field-label is-normal" }, [
-      _c("label", { staticClass: "label" }, [_vm._v("English Name: ")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "field-label is-normal" }, [
-      _c("label", { staticClass: "label" }, [_vm._v("Arabic Name: ")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "field-label is-normal" }, [
-      _c("label", { staticClass: "label" }, [_vm._v("Urdu Name: ")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "field-label is-normal" }, [
-      _c("label", { staticClass: "label" }, [_vm._v("Hindi Name: ")])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-55769598", module.exports)
-  }
-}
-
-/***/ }),
-/* 55 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(1)
-/* script */
-var __vue_script__ = __webpack_require__(56)
-/* template */
-var __vue_template__ = __webpack_require__(57)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/Update.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-d4df7d80", Component.options)
-  } else {
-    hotAPI.reload("data-v-d4df7d80", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 56 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['openmodal'],
-    data: function data() {
-        return {
-            list: {},
-            errors: {}
-        };
-    },
-
-    methods: {
-        close: function close() {
-            this.$emit('closeRequest');
-        },
-        save: function save() {
-            var _this = this;
-
-            axios.patch('/muslimbabyname/${this.list.id}', this.$data.list).then(function (response) {
-                return _this.close();
-            }).catch(function (error) {
-                return _this.errors = error.response.data.errors;
-            });
-        }
-    }
-});
-
-/***/ }),
-/* 57 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "modal", class: _vm.openmodal }, [
-    _c("div", { staticClass: "modal-background" }),
-    _vm._v(" "),
-    _c("div", { staticClass: "modal-card" }, [
-      _c("header", { staticClass: "modal-card-head" }, [
-        _c("p", { staticClass: "modal-card-title" }, [
-          _vm._v("Update " + _vm._s(_vm.list.n_english) + "'s  Entry")
-        ]),
-        _vm._v(" "),
-        _c("button", {
-          staticClass: "delete",
-          attrs: { "aria-label": "close" },
-          on: { click: _vm.close }
-        })
-      ]),
-      _vm._v(" "),
-      _c("section", { staticClass: "modal-card-body" }, [
-        _c("div", { staticClass: "field is-horizontal" }, [
-          _vm._m(0),
-          _vm._v(" "),
-          _c("div", { staticClass: "field-body" }, [
-            _c("div", { staticClass: "field" }, [
-              _c("p", { staticClass: "control is-expanded" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.list.n_bangla,
-                      expression: "list.n_bangla"
-                    }
-                  ],
-                  staticClass: "input",
-                  class: { "is-danger": _vm.errors.n_bangla },
-                  attrs: { type: "text", placeholder: "Bangla Name" },
-                  domProps: { value: _vm.list.n_bangla },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(_vm.list, "n_bangla", $event.target.value)
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _vm.errors.n_bangla
-                  ? _c("small", { staticClass: "has-text-danger" }, [
-                      _vm._v(_vm._s(_vm.errors.n_bangla[0]))
-                    ])
-                  : _vm._e()
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "field" }, [
-              _c("p", { staticClass: "control is-expanded" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.list.n_bangla,
-                      expression: "list.n_bangla"
-                    }
-                  ],
-                  staticClass: "input",
-                  class: { "is-danger": _vm.errors.n_bangla },
-                  attrs: { type: "text", placeholder: "Bangla Name" },
-                  domProps: { value: _vm.list.n_bangla },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(_vm.list, "n_bangla", $event.target.value)
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _vm.errors.n_bangla
-                  ? _c("small", { staticClass: "has-text-danger" }, [
-                      _vm._v(_vm._s(_vm.errors.n_bangla[0]))
-                    ])
-                  : _vm._e()
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "field is-horizontal" }, [
-          _vm._m(1),
-          _vm._v(" "),
-          _c("div", { staticClass: "field-body" }, [
-            _c("div", { staticClass: "field" }, [
-              _c("p", { staticClass: "control is-expanded" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.list.n_english,
-                      expression: "list.n_english"
-                    }
-                  ],
-                  staticClass: "input",
-                  class: { "is-danger": _vm.errors.n_english },
-                  attrs: { type: "text", placeholder: "English Name" },
-                  domProps: { value: _vm.list.n_english },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(_vm.list, "n_english", $event.target.value)
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _vm.errors.n_english
-                  ? _c("small", { staticClass: "has-text-danger" }, [
-                      _vm._v(_vm._s(_vm.errors.n_english[0]))
-                    ])
-                  : _vm._e()
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "field" }, [
-              _c("p", { staticClass: "control is-expanded" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.list.n_english,
-                      expression: "list.n_english"
-                    }
-                  ],
-                  staticClass: "input",
-                  class: { "is-danger": _vm.errors.n_english },
-                  attrs: { type: "text", placeholder: "English Name" },
-                  domProps: { value: _vm.list.n_english },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(_vm.list, "n_english", $event.target.value)
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _vm.errors.n_english
-                  ? _c("small", { staticClass: "has-text-danger" }, [
-                      _vm._v(_vm._s(_vm.errors.n_english[0]))
-                    ])
-                  : _vm._e()
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "field is-horizontal" }, [
-          _vm._m(2),
-          _vm._v(" "),
-          _c("div", { staticClass: "field-body" }, [
-            _c("div", { staticClass: "field" }, [
-              _c("p", { staticClass: "control is-expanded" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.list.n_arabic,
-                      expression: "list.n_arabic"
-                    }
-                  ],
-                  staticClass: "input",
-                  class: { "is-danger": _vm.errors.n_arabic },
-                  attrs: { type: "text", placeholder: "Arabic Name" },
-                  domProps: { value: _vm.list.n_arabic },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(_vm.list, "n_arabic", $event.target.value)
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _vm.errors.n_arabic
-                  ? _c("small", { staticClass: "has-text-danger" }, [
-                      _vm._v(_vm._s(_vm.errors.n_arabic[0]))
-                    ])
-                  : _vm._e()
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "field" }, [
-              _c("p", { staticClass: "control is-expanded" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.list.n_arabic,
-                      expression: "list.n_arabic"
-                    }
-                  ],
-                  staticClass: "input",
-                  class: { "is-danger": _vm.errors.n_arabic },
-                  attrs: { type: "text", placeholder: "Arabic Name" },
-                  domProps: { value: _vm.list.n_arabic },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(_vm.list, "n_arabic", $event.target.value)
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _vm.errors.n_arabic
-                  ? _c("small", { staticClass: "has-text-danger" }, [
-                      _vm._v(_vm._s(_vm.errors.n_arabic[0]))
-                    ])
-                  : _vm._e()
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "field is-horizontal" }, [
-          _vm._m(3),
-          _vm._v(" "),
-          _c("div", { staticClass: "field-body" }, [
-            _c("div", { staticClass: "field" }, [
-              _c("p", { staticClass: "control is-expanded" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.list.n_urdu,
-                      expression: "list.n_urdu"
-                    }
-                  ],
-                  staticClass: "input",
-                  class: { "is-danger": _vm.errors.n_urdu },
-                  attrs: { type: "text", placeholder: "Urdu Name" },
-                  domProps: { value: _vm.list.n_urdu },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(_vm.list, "n_urdu", $event.target.value)
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _vm.errors.n_urdu
-                  ? _c("small", { staticClass: "has-text-danger" }, [
-                      _vm._v(_vm._s(_vm.errors.n_urdu[0]))
-                    ])
-                  : _vm._e()
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "field" }, [
-              _c("p", { staticClass: "control is-expanded" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.list.n_urdu,
-                      expression: "list.n_urdu"
-                    }
-                  ],
-                  staticClass: "input",
-                  class: { "is-danger": _vm.errors.n_urdu },
-                  attrs: { type: "text", placeholder: "Urdu Name" },
-                  domProps: { value: _vm.list.n_urdu },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(_vm.list, "n_urdu", $event.target.value)
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _vm.errors.n_urdu
-                  ? _c("small", { staticClass: "has-text-danger" }, [
-                      _vm._v(_vm._s(_vm.errors.n_urdu[0]))
-                    ])
-                  : _vm._e()
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "field is-horizontal" }, [
-          _vm._m(4),
-          _vm._v(" "),
-          _c("div", { staticClass: "field-body" }, [
-            _c("div", { staticClass: "field" }, [
-              _c("p", { staticClass: "control is-expanded" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.list.n_hindi,
-                      expression: "list.n_hindi"
-                    }
-                  ],
-                  staticClass: "input",
-                  class: { "is-danger": _vm.errors.n_hindi },
-                  attrs: { type: "text", placeholder: "Hindi Name" },
-                  domProps: { value: _vm.list.n_hindi },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(_vm.list, "n_hindi", $event.target.value)
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _vm.errors.n_hindi
-                  ? _c("small", { staticClass: "has-text-danger" }, [
-                      _vm._v(_vm._s(_vm.errors.n_hindi[0]))
-                    ])
-                  : _vm._e()
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "field" }, [
-              _c("p", { staticClass: "control is-expanded" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.list.n_hindi,
-                      expression: "list.n_hindi"
-                    }
-                  ],
-                  staticClass: "input",
-                  class: { "is-danger": _vm.errors.n_hindi },
-                  attrs: { type: "text", placeholder: "Hindi Name" },
-                  domProps: { value: _vm.list.n_hindi },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(_vm.list, "n_hindi", $event.target.value)
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _vm.errors.n_hindi
-                  ? _c("small", { staticClass: "has-text-danger" }, [
-                      _vm._v(_vm._s(_vm.errors.n_hindi[0]))
-                    ])
-                  : _vm._e()
-              ])
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("footer", { staticClass: "modal-card-foot" }, [
-        _c(
-          "button",
-          { staticClass: "button is-success", on: { click: _vm.save } },
-          [_vm._v("Add Name")]
-        ),
-        _vm._v(" "),
-        _c("button", { staticClass: "button", on: { click: _vm.close } }, [
-          _vm._v("Cancel")
-        ])
-      ])
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "field-label is-normal" }, [
-      _c("label", { staticClass: "label" }, [_vm._v("Bangla ")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "field-label is-normal" }, [
-      _c("label", { staticClass: "label" }, [_vm._v("English")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "field-label is-normal" }, [
-      _c("label", { staticClass: "label" }, [_vm._v("Arabic")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "field-label is-normal" }, [
-      _c("label", { staticClass: "label" }, [_vm._v("Urdu")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "field-label is-normal" }, [
-      _c("label", { staticClass: "label" }, [_vm._v("Hindi")])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-d4df7d80", module.exports)
-  }
-}
-
-/***/ }),
-/* 58 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("nav", { staticClass: "panel column is-offset-2 is-8" }, [
-        _c("p", { staticClass: "panel-heading" }, [
-          _vm._v("\n                Muslim Baby Names\n                "),
-          _c(
-            "button",
-            {
-              staticClass: "button is-link is-outlined",
-              on: { click: _vm.addNew }
-            },
-            [_vm._v("\n                    Add New\n                ")]
-          ),
-          _vm._v(" "),
-          _vm.loading
-            ? _c("span", { staticClass: "is-pulled-right" }, [
-                _c("i", { staticClass: "fa fa-refresh fa-spin fa-2x fa-fw" })
-              ])
-            : _vm._e()
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "panel-block" }, [
-          _c("p", { staticClass: "control has-icons-left" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.searchQuery,
-                  expression: "searchQuery"
-                }
-              ],
-              staticClass: "input is-small",
-              attrs: { type: "text", placeholder: "search" },
-              domProps: { value: _vm.searchQuery },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.searchQuery = $event.target.value
-                }
-              }
-            }),
-            _vm._v(" "),
-            _vm._m(0)
-          ])
-        ]),
-        _vm._v(" "),
-        _c("table", { staticClass: "table" }, [
-          _vm._m(1),
-          _vm._v(" "),
-          _c(
-            "tbody",
-            _vm._l(_vm.temp, function(item, key) {
-              return _c("tr", [
-                _c("td", [_vm._v(_vm._s(item.n_bangla))]),
-                _vm._v(" "),
-                _c("td", [_vm._v(_vm._s(item.n_english))]),
-                _vm._v(" "),
-                _c("td", [_vm._v(_vm._s(item.n_arabic))]),
-                _vm._v(" "),
-                _c("td", [_vm._v(_vm._s(item.n_urdu))]),
-                _vm._v(" "),
-                _c("td", [_vm._v(_vm._s(item.n_hindi))]),
-                _vm._v(" "),
-                _c("td", { staticClass: "panel-tabs text-light" }, [
-                  _c("a", { staticClass: "button is-primary" }, [
-                    _c("i", {
-                      staticClass: "has-text-light fa fa-edit",
-                      attrs: { "aria-hidden": "true" },
-                      on: {
-                        click: function($event) {
-                          _vm.openUpdate(key)
-                        }
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "button is-link",
-                      staticStyle: { "margin-left": "15px" }
-                    },
-                    [
-                      _c("i", {
-                        staticClass: "has-text-light fa fa-eye",
-                        attrs: { "aria-hidden": "true" },
-                        on: {
-                          click: function($event) {
-                            _vm.openShow(key)
-                          }
-                        }
-                      })
-                    ]
-                  )
-                ])
-              ])
-            })
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("app-add", {
-        attrs: { openmodal: _vm.addActive },
-        on: { closeRequest: _vm.close }
-      }),
-      _vm._v(" "),
-      _c("app-show", {
-        attrs: { openmodal: _vm.showActive },
-        on: { closeRequest: _vm.close }
-      }),
-      _vm._v(" "),
-      _c("app-update", {
-        attrs: { openmodal: _vm.updateActive },
-        on: { closeRequest: _vm.close }
-      })
-    ],
-    1
-  )
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", { staticClass: "icon is-small is-left" }, [
-      _c("i", { staticClass: "fa fa-search" })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", [_vm._v("Bangla")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("English")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Arabic")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Urdu")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Hindi")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Status")])
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-6707e3d4", module.exports)
-  }
-}
-
-/***/ }),
-/* 59 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("section", { staticClass: "section" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("h1", { staticClass: "title" }, [_vm._v("Section")]),
-        _vm._v(" "),
-        _c("h2", { staticClass: "subtitle" }, [
-          _vm._v("\n            A simple container to divide your page into "),
-          _c("strong", [_vm._v("sections")]),
-          _vm._v(", like the one you're currently reading\n        ")
-        ])
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-10e9c534", module.exports)
-  }
-}
-
-/***/ }),
-/* 60 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 61 */,
-/* 62 */,
-/* 63 */
 /***/ (function(module, exports) {
 
 /*
@@ -45933,54 +43765,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 64 */,
-/* 65 */,
-/* 66 */,
-/* 67 */,
-/* 68 */,
-/* 69 */,
-/* 70 */,
-/* 71 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(72);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(73)("4750ce28", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-083ff5dc\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Footer.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-083ff5dc\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Footer.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 72 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(63)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.footer {\n   position:fixed;\n   left:0px;\n   bottom:0px;\n   height:30px;\n   width:100%;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 73 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -45999,7 +43784,7 @@ if (typeof DEBUG !== 'undefined' && DEBUG) {
   ) }
 }
 
-var listToStyles = __webpack_require__(74)
+var listToStyles = __webpack_require__(51)
 
 /*
 type StyleObject = {
@@ -46208,7 +43993,7 @@ function applyToTag (styleElement, obj) {
 
 
 /***/ }),
-/* 74 */
+/* 51 */
 /***/ (function(module, exports) {
 
 /**
@@ -46239,6 +44024,2499 @@ module.exports = function listToStyles (parentId, list) {
   return styles
 }
 
+
+/***/ }),
+/* 52 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("footer", { staticClass: "footer" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "content has-text-centered" }, [
+          _c("p", [
+            _c("strong", [_vm._v("Muslim Baby Name App")]),
+            _vm._v(" by "),
+            _c("a", { attrs: { href: "https://jeweltheme.com" } }, [
+              _vm._v("Liton Arefin")
+            ]),
+            _vm._v(". This source code is licensed by "),
+            _c(
+              "a",
+              { attrs: { href: "https://github.com/jeweltheme/babynames" } },
+              [_vm._v("Github Jewel Theme")]
+            )
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-083ff5dc", module.exports)
+  }
+}
+
+/***/ }),
+/* 53 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Add_vue__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Add_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Add_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Show_vue__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Show_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__Show_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Update_vue__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Update_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__Update_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            addActive: '',
+            showActive: '',
+            updateActive: '',
+            lists: {},
+            errors: {},
+            loading: false,
+            searchQuery: '',
+            temp: ''
+        };
+    },
+
+    components: {
+        AppAdd: __WEBPACK_IMPORTED_MODULE_0__Add_vue___default.a,
+        AppShow: __WEBPACK_IMPORTED_MODULE_1__Show_vue___default.a,
+        AppUpdate: __WEBPACK_IMPORTED_MODULE_2__Update_vue___default.a
+    },
+    methods: {
+        addNew: function addNew() {
+            this.addActive = "is-active";
+        },
+        close: function close() {
+            this.addActive = this.showActive = this.updateActive = '';
+        },
+        openShow: function openShow(key) {
+            this.$children[1].list = this.temp[key];
+            this.showActive = 'is-active';
+        },
+        openUpdate: function openUpdate(key) {
+            this.$children[2].list = this.temp[key];
+            this.updateActive = 'is-active';
+        },
+        del: function del(key, id) {
+            var _this = this;
+
+            if (confirm("Are you sure wants to do this ?")) {
+                this.loading = !this.loading;
+                axios.delete('/muslimbabyname/' + id).then(function (response) {
+                    _this.lists.splice(key, 1);
+                    _this.loading = !_this.loading;
+                }).catch(function (error) {
+                    return _this.errors = error.response.data.errors;
+                });
+            }
+
+            // console.log(`${key} ${id}`)
+            //    axios.delete(`/muslimbabyname/${id}`)
+            //    .then( (response) => console.log("Deleted"))
+            //   .catch( (error) => this.errors = error.response.data.errors )
+        }
+    },
+    mounted: function mounted() {
+        var _this2 = this;
+
+        axios.post('/getData').then(function (response) {
+            return _this2.lists = _this2.temp = response.data;
+        }).catch(function (error) {
+            return _this2.errors = error.response.data.errors;
+        });
+    },
+
+    watch: {
+        searchQuery: function searchQuery() {
+            var _this3 = this;
+
+            if (this.searchQuery.length > 0) {
+                this.temp = this.lists.filter(function (item) {
+                    return Object.keys(item).some(function (key) {
+                        var string = String(item[key]);
+                        return string.toLowerCase().indexOf(_this3.searchQuery.toLowerCase()) > -1;
+                        // console.log(string)
+                    });
+                });
+                //console.log(result)
+            } else {
+                this.temp = this.lists;
+            }
+        }
+    }
+});
+
+/***/ }),
+/* 54 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(55)
+/* template */
+var __vue_template__ = __webpack_require__(56)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/Add.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-ab89768c", Component.options)
+  } else {
+    hotAPI.reload("data-v-ab89768c", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 55 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    props: ['openmodal'],
+    data: function data() {
+        return {
+            list: {
+                n_english: '',
+                n_bangla: '',
+                n_arabic: '',
+                n_urdu: '',
+                n_hindi: '',
+                name_type: '',
+
+                m_english: '',
+                m_bangla: '',
+                m_arabic: '',
+                m_hindi: '',
+                m_urdu: ''
+            },
+            errors: {}
+        };
+    },
+
+    methods: {
+        close: function close() {
+            this.$emit('closeRequest');
+        },
+        save: function save() {
+            var _this = this;
+
+            axios.post('/muslimbabyname', this.$data.list).then(function (response) {
+                _this.close();
+                _this.$parent.lists.push(response.data);
+                _this.$parent.lists.sort(function (a, b) {
+                    if (a.n_english > b.n_english) {
+                        return 1;
+                    } else if (a.n_english < b.n_english) {
+                        return -1;
+                    }
+                });
+                _this.list = "";
+            }).catch(function (error) {
+                return _this.errors = error.response.data.errors;
+            });
+        }
+    }
+});
+
+/***/ }),
+/* 56 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "modal", class: _vm.openmodal }, [
+    _c("div", { staticClass: "modal-background" }),
+    _vm._v(" "),
+    _c("div", { staticClass: "modal-card" }, [
+      _c("header", { staticClass: "modal-card-head" }, [
+        _c("p", { staticClass: "modal-card-title" }, [
+          _vm._v("Muslim Baby Name Entry")
+        ]),
+        _vm._v(" "),
+        _c("button", {
+          staticClass: "delete",
+          attrs: { "aria-label": "close" },
+          on: { click: _vm.close }
+        })
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "modal-card-body" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _vm._m(1),
+          _vm._v(" "),
+          _c("div", { staticClass: "field-body" }, [
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.n_bangla,
+                      expression: "list.n_bangla"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.n_bangla },
+                  attrs: { type: "text", placeholder: "Bangla Name" },
+                  domProps: { value: _vm.list.n_bangla },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "n_bangla", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors.n_bangla
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.n_bangla[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.m_bangla,
+                      expression: "list.m_bangla"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.m_bangla },
+                  attrs: { type: "text", placeholder: "Bangla Name Meaning" },
+                  domProps: { value: _vm.list.m_bangla },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "m_bangla", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors.m_bangla
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.m_bangla[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _vm._m(2),
+          _vm._v(" "),
+          _c("div", { staticClass: "field-body" }, [
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.n_english,
+                      expression: "list.n_english"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.n_english },
+                  attrs: { type: "text", placeholder: "English Name" },
+                  domProps: { value: _vm.list.n_english },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "n_english", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors.n_english
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.n_english[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.m_english,
+                      expression: "list.m_english"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.m_english },
+                  attrs: { type: "text", placeholder: "English Name Meaning" },
+                  domProps: { value: _vm.list.m_english },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "m_english", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors.m_english
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.m_english[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _vm._m(3),
+          _vm._v(" "),
+          _c("div", { staticClass: "field-body" }, [
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.n_arabic,
+                      expression: "list.n_arabic"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.n_arabic },
+                  attrs: { type: "text", placeholder: "Arabic Name" },
+                  domProps: { value: _vm.list.n_arabic },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "n_arabic", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors.n_arabic
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.n_arabic[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.m_arabic,
+                      expression: "list.m_arabic"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.m_arabic },
+                  attrs: { type: "text", placeholder: "Arabic Name Meaning" },
+                  domProps: { value: _vm.list.m_arabic },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "m_arabic", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors.m_arabic
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.m_arabic[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _vm._m(4),
+          _vm._v(" "),
+          _c("div", { staticClass: "field-body" }, [
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.n_urdu,
+                      expression: "list.n_urdu"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.n_urdu },
+                  attrs: { type: "text", placeholder: "Urdu Name" },
+                  domProps: { value: _vm.list.n_urdu },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "n_urdu", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors.n_urdu
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.n_urdu[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.m_urdu,
+                      expression: "list.m_urdu"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.m_urdu },
+                  attrs: { type: "text", placeholder: "Urdu Name Meaning" },
+                  domProps: { value: _vm.list.m_urdu },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "m_urdu", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors.m_urdu
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.m_urdu[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _vm._m(5),
+          _vm._v(" "),
+          _c("div", { staticClass: "field-body" }, [
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.n_hindi,
+                      expression: "list.n_hindi"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.n_hindi },
+                  attrs: { type: "text", placeholder: "Hindi Name" },
+                  domProps: { value: _vm.list.n_hindi },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "n_hindi", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors.n_hindi
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.n_hindi[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.m_hindi,
+                      expression: "list.m_hindi"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.m_hindi },
+                  attrs: { type: "text", placeholder: "Hindi Name" },
+                  domProps: { value: _vm.list.m_hindi },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "m_hindi", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors.m_hindi
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.m_hindi[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _vm._m(6),
+          _vm._v(" "),
+          _c("div", { staticClass: "field-body" }, [
+            _c("div", { staticClass: "select" }, [
+              _c(
+                "select",
+                {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.name_type,
+                      expression: "list.name_type"
+                    }
+                  ],
+                  on: {
+                    change: function($event) {
+                      var $$selectedVal = Array.prototype.filter
+                        .call($event.target.options, function(o) {
+                          return o.selected
+                        })
+                        .map(function(o) {
+                          var val = "_value" in o ? o._value : o.value
+                          return val
+                        })
+                      _vm.$set(
+                        _vm.list,
+                        "name_type",
+                        $event.target.multiple
+                          ? $$selectedVal
+                          : $$selectedVal[0]
+                      )
+                    }
+                  }
+                },
+                [
+                  _c("option", { attrs: { value: "1" } }, [_vm._v("Boy")]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "2" } }, [_vm._v("Girl")]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "3" } }, [_vm._v("Allah")]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "4" } }, [_vm._v("Sahabi")])
+                ]
+              )
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("footer", { staticClass: "modal-card-foot" }, [
+        _c(
+          "button",
+          { staticClass: "button is-success", on: { click: _vm.save } },
+          [_vm._v("Add Name")]
+        ),
+        _vm._v(" "),
+        _c("button", { staticClass: "button", on: { click: _vm.close } }, [
+          _vm._v("Cancel")
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "h2",
+      { staticStyle: { "text-align": "center", "margin-bottom": "30px" } },
+      [
+        _c("b", [
+          _vm._v(
+            "Left Input Original Name and Right Input Meaning of this Language"
+          )
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Bangla ")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("English")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Arabic")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Urdu")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Hindi")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Name Type")])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-ab89768c", module.exports)
+  }
+}
+
+/***/ }),
+/* 57 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(58)
+/* template */
+var __vue_template__ = __webpack_require__(59)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/Show.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-55769598", Component.options)
+  } else {
+    hotAPI.reload("data-v-55769598", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 58 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    props: ['openmodal'],
+    data: function data() {
+        return {
+            list: ''
+        };
+    },
+
+    methods: {
+        close: function close() {
+            this.$emit('closeRequest');
+        }
+    }
+});
+
+/***/ }),
+/* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "modal", class: _vm.openmodal }, [
+    _c("div", { staticClass: "modal-background" }),
+    _vm._v(" "),
+    _c("div", { staticClass: "modal-card" }, [
+      _c("header", { staticClass: "modal-card-head" }, [
+        _c("p", { staticClass: "modal-card-title" }, [
+          _vm._v(_vm._s(_vm.list.n_english) + "'s Details View")
+        ]),
+        _vm._v(" "),
+        _c("button", {
+          staticClass: "delete",
+          attrs: { "aria-label": "close" },
+          on: { click: _vm.close }
+        })
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "modal-card-body" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _vm._m(1),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "field-body", staticStyle: { "margin-top": "5px" } },
+            [
+              _c("div", { staticClass: "field" }, [
+                _c("p", { staticClass: "control is-expanded" }, [
+                  _vm._v(
+                    "\n                            " +
+                      _vm._s(_vm.list.n_bangla) +
+                      "\n                        "
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "field" }, [
+                _c("p", { staticClass: "control is-expanded" }, [
+                  _vm._v(
+                    "\n                            " +
+                      _vm._s(_vm.list.m_bangla) +
+                      "\n                        "
+                  )
+                ])
+              ])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _vm._m(2),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "field-body", staticStyle: { "margin-top": "5px" } },
+            [
+              _c("div", { staticClass: "field" }, [
+                _c("p", { staticClass: "control is-expanded" }, [
+                  _vm._v(
+                    "\n                            " +
+                      _vm._s(_vm.list.n_english) +
+                      "\n                        "
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "field" }, [
+                _c("p", { staticClass: "control is-expanded" }, [
+                  _vm._v(
+                    "\n                            " +
+                      _vm._s(_vm.list.m_english) +
+                      "\n                        "
+                  )
+                ])
+              ])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _vm._m(3),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "field-body", staticStyle: { "margin-top": "5px" } },
+            [
+              _c("div", { staticClass: "field" }, [
+                _c("p", { staticClass: "control is-expanded" }, [
+                  _vm._v(
+                    "\n                            " +
+                      _vm._s(_vm.list.n_arabic) +
+                      "\n                        "
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "field" }, [
+                _c("p", { staticClass: "control is-expanded" }, [
+                  _vm._v(
+                    "\n                            " +
+                      _vm._s(_vm.list.m_arabic) +
+                      "\n                        "
+                  )
+                ])
+              ])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _vm._m(4),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "field-body", staticStyle: { "margin-top": "5px" } },
+            [
+              _c("div", { staticClass: "field" }, [
+                _c("p", { staticClass: "control is-expanded" }, [
+                  _vm._v(
+                    "\n                            " +
+                      _vm._s(_vm.list.n_urdu) +
+                      "\n                        "
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "field" }, [
+                _c("p", { staticClass: "control is-expanded" }, [
+                  _vm._v(
+                    "\n                            " +
+                      _vm._s(_vm.list.m_urdu) +
+                      "\n                        "
+                  )
+                ])
+              ])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _vm._m(5),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "field-body", staticStyle: { "margin-top": "5px" } },
+            [
+              _c("div", { staticClass: "field" }, [
+                _c("p", { staticClass: "control is-expanded" }, [
+                  _vm._v(
+                    "\n                            " +
+                      _vm._s(_vm.list.n_hindi) +
+                      "\n                        "
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "field" }, [
+                _c("p", { staticClass: "control is-expanded" }, [
+                  _vm._v(
+                    "\n                            " +
+                      _vm._s(_vm.list.m_hindi) +
+                      "\n                        "
+                  )
+                ])
+              ])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _vm._m(6),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "field-body", staticStyle: { "margin-top": "5px" } },
+            [
+              _vm.list.name_type === 1
+                ? _c("div", { staticClass: "field" }, [
+                    _c("p", { staticClass: "control is-expanded" }, [
+                      _vm._v(
+                        "\n                            Boy\n                        "
+                      )
+                    ])
+                  ])
+                : _vm.list.name_type === 2
+                  ? _c("div", { staticClass: "field" }, [
+                      _c("p", { staticClass: "control is-expanded" }, [
+                        _vm._v(
+                          "\n                            Girl\n                        "
+                        )
+                      ])
+                    ])
+                  : _vm.list.name_type === 3
+                    ? _c("div", { staticClass: "field" }, [
+                        _c("p", { staticClass: "control is-expanded" }, [
+                          _vm._v(
+                            "\n                            Allah\n                        "
+                          )
+                        ])
+                      ])
+                    : _vm.list.name_type === 4
+                      ? _c("div", { staticClass: "field" }, [
+                          _c("p", { staticClass: "control is-expanded" }, [
+                            _vm._v(
+                              "\n                            Sahabi\n                        "
+                            )
+                          ])
+                        ])
+                      : _c("div", { staticClass: "field" }, [
+                          _c("p", { staticClass: "control is-expanded" })
+                        ])
+            ]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("footer", { staticClass: "modal-card-foot" }, [
+        _c("button", { staticClass: "button", on: { click: _vm.close } }, [
+          _vm._v("Cancel")
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "h2",
+      { staticStyle: { "text-align": "center", "margin-bottom": "30px" } },
+      [
+        _c("b", [
+          _vm._v(
+            "Left side Original Name and Right side Meaning of this Language"
+          )
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Bangla: ")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("English: ")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Arabic: ")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Urdu: ")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Hindi: ")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Name Type: ")])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-55769598", module.exports)
+  }
+}
+
+/***/ }),
+/* 60 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(61)
+/* template */
+var __vue_template__ = __webpack_require__(62)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/Update.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-d4df7d80", Component.options)
+  } else {
+    hotAPI.reload("data-v-d4df7d80", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 61 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    props: ['openmodal'],
+    data: function data() {
+        return {
+            list: {},
+            errors: {}
+        };
+    },
+
+    methods: {
+        close: function close() {
+            this.$emit('closeRequest');
+        },
+        update: function update() {
+            var _this = this;
+
+            axios.patch('/muslimbabyname/' + this.list.id, this.$data.list).then(function (response) {
+                return _this.close();
+            }).catch(function (error) {
+                return _this.errors = error.response.data.errors;
+            });
+        }
+    }
+});
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "modal", class: _vm.openmodal }, [
+    _c("div", { staticClass: "modal-background" }),
+    _vm._v(" "),
+    _c("div", { staticClass: "modal-card" }, [
+      _c("header", { staticClass: "modal-card-head" }, [
+        _c("p", { staticClass: "modal-card-title" }, [
+          _vm._v("Update " + _vm._s(_vm.list.n_english) + "'s  Entry")
+        ]),
+        _vm._v(" "),
+        _c("button", {
+          staticClass: "delete",
+          attrs: { "aria-label": "close" },
+          on: { click: _vm.close }
+        })
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "modal-card-body" }, [
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("div", { staticClass: "field-body" }, [
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.n_bangla,
+                      expression: "list.n_bangla"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.n_bangla },
+                  attrs: { type: "text", placeholder: "Bangla Name" },
+                  domProps: { value: _vm.list.n_bangla },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "n_bangla", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors.n_bangla
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.n_bangla[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.m_bangla,
+                      expression: "list.m_bangla"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.m_bangla },
+                  attrs: { type: "text", placeholder: "Bangla Name" },
+                  domProps: { value: _vm.list.m_bangla },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "m_bangla", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors.m_bangla
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.m_bangla[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _vm._m(1),
+          _vm._v(" "),
+          _c("div", { staticClass: "field-body" }, [
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.n_english,
+                      expression: "list.n_english"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.n_english },
+                  attrs: { type: "text", placeholder: "English Name" },
+                  domProps: { value: _vm.list.n_english },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "n_english", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors.n_english
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.n_english[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.m_english,
+                      expression: "list.m_english"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.m_english },
+                  attrs: { type: "text", placeholder: "English Name" },
+                  domProps: { value: _vm.list.m_english },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "m_english", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors.m_english
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.m_english[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _vm._m(2),
+          _vm._v(" "),
+          _c("div", { staticClass: "field-body" }, [
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.n_arabic,
+                      expression: "list.n_arabic"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.n_arabic },
+                  attrs: { type: "text", placeholder: "Arabic Name" },
+                  domProps: { value: _vm.list.n_arabic },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "n_arabic", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors.n_arabic
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.n_arabic[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.m_arabic,
+                      expression: "list.m_arabic"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.m_arabic },
+                  attrs: { type: "text", placeholder: "Arabic Name" },
+                  domProps: { value: _vm.list.m_arabic },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "m_arabic", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors.m_arabic
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.m_arabic[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _vm._m(3),
+          _vm._v(" "),
+          _c("div", { staticClass: "field-body" }, [
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.n_urdu,
+                      expression: "list.n_urdu"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.n_urdu },
+                  attrs: { type: "text", placeholder: "Urdu Name" },
+                  domProps: { value: _vm.list.n_urdu },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "n_urdu", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors.n_urdu
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.n_urdu[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.m_urdu,
+                      expression: "list.m_urdu"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.m_urdu },
+                  attrs: { type: "text", placeholder: "Urdu Name" },
+                  domProps: { value: _vm.list.m_urdu },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "m_urdu", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors.m_urdu
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.m_urdu[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _vm._m(4),
+          _vm._v(" "),
+          _c("div", { staticClass: "field-body" }, [
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.n_hindi,
+                      expression: "list.n_hindi"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.n_hindi },
+                  attrs: { type: "text", placeholder: "Hindi Name" },
+                  domProps: { value: _vm.list.n_hindi },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "n_hindi", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors.n_hindi
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.n_hindi[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.m_hindi,
+                      expression: "list.m_hindi"
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.errors.m_hindi },
+                  attrs: { type: "text", placeholder: "Hindi Name" },
+                  domProps: { value: _vm.list.m_hindi },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.list, "m_hindi", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors.m_hindi
+                  ? _c("small", { staticClass: "has-text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.m_hindi[0]))
+                    ])
+                  : _vm._e()
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _vm._m(5),
+          _vm._v(" "),
+          _c("div", { staticClass: "field-body" }, [
+            _c("div", { staticClass: "select" }, [
+              _c(
+                "select",
+                {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.list.name_type,
+                      expression: "list.name_type"
+                    }
+                  ],
+                  on: {
+                    change: function($event) {
+                      var $$selectedVal = Array.prototype.filter
+                        .call($event.target.options, function(o) {
+                          return o.selected
+                        })
+                        .map(function(o) {
+                          var val = "_value" in o ? o._value : o.value
+                          return val
+                        })
+                      _vm.$set(
+                        _vm.list,
+                        "name_type",
+                        $event.target.multiple
+                          ? $$selectedVal
+                          : $$selectedVal[0]
+                      )
+                    }
+                  }
+                },
+                [
+                  _c("option", { attrs: { value: "1" } }, [_vm._v("Boy")]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "2" } }, [_vm._v("Girl")]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "3" } }, [_vm._v("Allah")]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "4" } }, [_vm._v("Sahabi")])
+                ]
+              )
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("footer", { staticClass: "modal-card-foot" }, [
+        _c(
+          "button",
+          { staticClass: "button is-success", on: { click: _vm.update } },
+          [_vm._v("Update Name")]
+        ),
+        _vm._v(" "),
+        _c("button", { staticClass: "button", on: { click: _vm.close } }, [
+          _vm._v("Cancel")
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Bangla ")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("English")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Arabic")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Urdu")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Hindi")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field-label is-normal" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Name Type")])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-d4df7d80", module.exports)
+  }
+}
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    [
+      _c("nav", { staticClass: "panel column is-offset-2 is-8" }, [
+        _c("p", { staticClass: "panel-heading" }, [
+          _vm._v("\n                Muslim Baby Names\n                "),
+          _c(
+            "button",
+            {
+              staticClass: "button is-link is-outlined",
+              on: { click: _vm.addNew }
+            },
+            [_vm._v("\n                    Add New\n                ")]
+          ),
+          _vm._v(" "),
+          _vm.loading
+            ? _c("span", { staticClass: "is-pulled-right" }, [
+                _c("i", { staticClass: "fa fa-refresh fa-spin fa-2x fa-fw" })
+              ])
+            : _vm._e()
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "panel-block" }, [
+          _c("p", { staticClass: "control has-icons-left" }, [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.searchQuery,
+                  expression: "searchQuery"
+                }
+              ],
+              staticClass: "input is-small",
+              attrs: { type: "text", placeholder: "search" },
+              domProps: { value: _vm.searchQuery },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.searchQuery = $event.target.value
+                }
+              }
+            }),
+            _vm._v(" "),
+            _vm._m(0)
+          ])
+        ]),
+        _vm._v(" "),
+        _c("table", { staticClass: "table" }, [
+          _vm._m(1),
+          _vm._v(" "),
+          _c(
+            "tbody",
+            _vm._l(_vm.temp, function(item, key) {
+              return _c("tr", [
+                _c("td", [_vm._v(_vm._s(item.id))]),
+                _c("td", [
+                  _vm._v(_vm._s(item.n_bangla)),
+                  _c("br"),
+                  _c("small", [_vm._v(_vm._s(item.m_bangla))])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _vm._v(_vm._s(item.n_english)),
+                  _c("br"),
+                  _c("small", [_vm._v(_vm._s(item.m_english))])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _vm._v(_vm._s(item.n_arabic)),
+                  _c("br"),
+                  _c("small", [_vm._v(_vm._s(item.m_arabic))])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _vm._v(_vm._s(item.n_urdu)),
+                  _c("br"),
+                  _c("small", [_vm._v(_vm._s(item.m_urdu))])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _vm._v(_vm._s(item.n_hindi)),
+                  _c("br"),
+                  _c("small", [_vm._v(_vm._s(item.m_hindi))])
+                ]),
+                _vm._v(" "),
+                item.name_type === 1
+                  ? _c("td", [_vm._v("Boy")])
+                  : item.name_type === 2
+                    ? _c("td", [_vm._v("Girl")])
+                    : item.name_type === 3
+                      ? _c("td", [_vm._v("Allah")])
+                      : item.name_type === 4
+                        ? _c("td", [_vm._v("Sahabi")])
+                        : _c("td"),
+                _vm._v(" "),
+                _c(
+                  "td",
+                  {
+                    staticClass: "panel-tabs text-light",
+                    staticStyle: {
+                      "font-size": "1em !important",
+                      "margin-top": "20px"
+                    }
+                  },
+                  [
+                    _c("a", { staticClass: "button is-primary" }, [
+                      _c("i", {
+                        staticClass: "has-text-light fa fa-edit",
+                        attrs: { "aria-hidden": "true" },
+                        on: {
+                          click: function($event) {
+                            _vm.openUpdate(key)
+                          }
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "button is-link",
+                        staticStyle: { "margin-left": "15px" }
+                      },
+                      [
+                        _c("i", {
+                          staticClass: "has-text-light fa fa-eye",
+                          attrs: { "aria-hidden": "true" },
+                          on: {
+                            click: function($event) {
+                              _vm.openShow(key)
+                            }
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                )
+              ])
+            })
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("app-add", {
+        attrs: { openmodal: _vm.addActive },
+        on: { closeRequest: _vm.close }
+      }),
+      _vm._v(" "),
+      _c("app-show", {
+        attrs: { openmodal: _vm.showActive },
+        on: { closeRequest: _vm.close }
+      }),
+      _vm._v(" "),
+      _c("app-update", {
+        attrs: { openmodal: _vm.updateActive },
+        on: { closeRequest: _vm.close }
+      })
+    ],
+    1
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", { staticClass: "icon is-small is-left" }, [
+      _c("i", { staticClass: "fa fa-search" })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [_vm._v("ID")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Bangla")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("English")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Arabic")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Urdu")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Hindi")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Name Type")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Status")])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-6707e3d4", module.exports)
+  }
+}
+
+/***/ }),
+/* 64 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("section", { staticClass: "section" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("h1", { staticClass: "title" }, [_vm._v("Section")]),
+        _vm._v(" "),
+        _c("h2", { staticClass: "subtitle" }, [
+          _vm._v("\n            A simple container to divide your page into "),
+          _c("strong", [_vm._v("sections")]),
+          _vm._v(", like the one you're currently reading\n        ")
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-10e9c534", module.exports)
+  }
+}
+
+/***/ }),
+/* 65 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

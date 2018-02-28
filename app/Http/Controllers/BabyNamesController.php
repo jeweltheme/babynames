@@ -6,6 +6,7 @@ use App\BabyNames;
 use App\BabyNameMeaning;
 use Illuminate\Http\Request;
 use App\Http\Requests\BabyNameRequest;
+use Illuminate\Support\Facades\DB;
 
 class BabyNamesController extends Controller{
     /**
@@ -17,9 +18,13 @@ class BabyNamesController extends Controller{
         return view('muslimbabyname');
     }
 
-    public function getData(){
-        return BabyNames::orderBy('n_english', 'ASC')->get();
-        //return BabyNames::all();
+    public function getData() {
+        return DB::table('names')->select('*')->join('meaning', 'meaning.name_id', '=', 'names.id')->get();
+        // $abc = BabyNames::all();
+        // return view('test')->with('a', $abc);
+        //return BabyNames::orderBy('n_english', 'ASC')->get();
+        //return BabyNameMeaning::orderBy('m_english', 'ASC')->get();
+        //return getData::all();
     }
     /**
      * Show the form for creating a new resource.
@@ -53,36 +58,26 @@ class BabyNamesController extends Controller{
             $mbn->n_arabic = $request->n_arabic;
             $mbn->n_hindi = $request->n_hindi;
             $mbn->n_urdu = $request->n_urdu;
+            $mbn->name_type = $request->name_type;
 
             $mbn->save();
 
+
+            //Name Meaning
+            $name_id = $mbn->id;
+            $mbn_mean = new BabyNameMeaning;
+            $mbn_mean->m_english = $request->m_english;
+            $mbn_mean->m_bangla = $request->m_bangla;
+            $mbn_mean->m_arabic = $request->m_arabic;
+            $mbn_mean->m_hindi = $request->m_hindi;
+            $mbn_mean->m_urdu =  $request->m_urdu;
+            $mbn_mean->name_id = $name_id;
+
+            $mbn_mean->save();
+
             return $mbn;
+            return $mbn_mean;
 
-            // $name_id = $mbn->id;
-            // $mbn_mean = new BabyNameMeaning;
-            // $mbn_mean->m_english = $request->m_english;
-            // $mbn_mean->m_bangla = $request->m_bangla;
-            // $mbn_mean->m_arabic = $request->m_arabic;
-            // $mbn_mean->m_hindi = $request->m_hindi;
-            // $mbn_mean->m_urdu =  $request->m_urdu;
-            // $mbn_mean->name_id = $name_id;
-
-            // $mbn_mean->save();
-
-
-
-
-        //return $request->all();
-
-        // $mbn = new BabyNames();
-        // $mbn->n_english = $request->n_english;
-        // $mbn->n_bangla = $request->n_bangla;
-        // $mbn->n_arabic = $request->n_arabic;
-        // $mbn->n_hindi = $request->n_hindi;
-        // $mbn->n_urdu = $request->n_urdu;
-
-        // $mbn->save();
-        //DB::table('names')->$mbn->save();
     }
 
     /**
@@ -114,16 +109,32 @@ class BabyNamesController extends Controller{
      * @param  \App\BabyNames  $babyNames
      * @return \Illuminate\Http\Response
      */
-    public function update(BabyNameRequest $request)
-    {
-        $mbn = BabyNames::find($request->id);
-        $mbn->n_english = $request->n_english;
+    public function update(BabyNameRequest $request){
+
+
+        // // return $mbn;
+
+        // // Name Meaning
+       //$name_id = $mbn->id;
+        //$mbn_mean = new BabyNameMeaning;
+        $mbn_mean = BabyNameMeaning::find($request->id);
+        $mbn_mean->m_bangla = $request->m_bangla;
+        $mbn_mean->m_english = $request->m_english;
+        $mbn_mean->m_arabic = $request->m_arabic;
+        $mbn_mean->m_hindi = $request->m_hindi;
+        $mbn_mean->m_urdu =  $request->m_urdu;
+        $mbn_mean->update();
+
+       // //Name
+        $mbn = BabyNames::find($request->name_id);
         $mbn->n_bangla = $request->n_bangla;
+        $mbn->n_english = $request->n_english;
         $mbn->n_arabic = $request->n_arabic;
         $mbn->n_hindi = $request->n_hindi;
         $mbn->n_urdu = $request->n_urdu;
+        $mbn->name_type = $request->name_type;
+        $mbn->update();
 
-        $mbn->save();
     }
 
     /**

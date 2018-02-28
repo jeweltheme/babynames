@@ -22,23 +22,34 @@
             <table class="table">
                 <thead>
                     <tr>
+                        <th>ID</th>
                         <th>Bangla</th>
                         <th>English</th>
                         <th>Arabic</th>
                         <th>Urdu</th>
                         <th>Hindi</th>
+                        <th>Name Type</th>
                         <th>Status</th>
                     </tr>
                 </thead>
 
                 <tbody>
                     <tr v-for="item,key in temp">
-                        <td >{{item.n_bangla}}</td>
-                        <td >{{item.n_english}}</td>
-                        <td >{{item.n_arabic}}</td>
-                        <td >{{item.n_urdu}}</td>
-                        <td >{{item.n_hindi}}</td>
-                        <td class="panel-tabs text-light">
+                        <td>{{item.id}}</small>
+                        <td>{{item.n_bangla}}<br><small>{{ item.m_bangla }}</small>
+                        </td>
+                        <td>{{item.n_english}}<br><small>{{ item.m_english }}</small></td>
+                        <td>{{item.n_arabic}}<br><small>{{ item.m_arabic }}</small></td>
+                        <td>{{item.n_urdu}}<br><small>{{ item.m_urdu }}</small></td>
+                        <td>{{item.n_hindi}}<br><small>{{ item.m_hindi }}</small></td>
+
+                        <td v-if="item.name_type === 1">Boy</td>
+                        <td v-else-if="item.name_type === 2">Girl</td>
+                        <td v-else-if="item.name_type === 3">Allah</td>
+                        <td v-else-if="item.name_type === 4">Sahabi</td>
+                        <td v-else></td>
+
+                        <td class="panel-tabs text-light" style="font-size: 1em !important; margin-top:20px;">
 <!--                             <span class="panel-icon column is-1">
                                 <i class="has-text-danger fa fa-trash" aria-hidden="true" @click="del(key, item.id)"></i>
                             </span> -->

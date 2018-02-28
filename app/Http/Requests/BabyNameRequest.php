@@ -24,18 +24,27 @@ class BabyNameRequest extends FormRequest
      */
     public function rules( Request $request ){
         return [
+                    // Name Meaning
                     //'n_english' => 'required|max:255|unique:names,n_english,'.$request->id
+                    // 'n_english' => 'max:255|unique:names,n_english',
+                    // 'n_bangla' => 'max:255|unique:names,n_bangla',
+                    // 'n_arabic' => 'max:255|unique:names,n_arabic',
+                    // 'n_urdu' => 'max:255|unique:names,n_urdu',
+                    // 'n_hindi' => 'max:255|unique:names,n_hindi',
+
                     'n_english' => 'max:255',
                     'n_bangla' => 'max:255',
                     'n_arabic' => 'max:255',
                     'n_urdu' => 'max:255',
-                    'n_hindi' => 'max:255'
+                    'n_hindi' => 'max:255',
+                    'name_type' => 'max:255',
 
-                    // m_english:'',
-                    // m_bangla:'',
-                    // m_arabic:'',
-                    // m_hindi:'',
-                    // m_urdu:''
+                    // Name Meaning
+                    'm_english' => 'max:255',
+                    'm_bangla' => 'max:255',
+                    'm_arabic' => 'max:255',
+                    'm_hindi' => 'max:255',
+                    'm_urdu' => 'max:255'
         ];
     }
 }
